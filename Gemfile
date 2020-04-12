@@ -33,3 +33,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+# devise gem used for authentication (login user) ...you can use any solution you want for login, DudePolicy gem is independent
+gem 'devise' 

@@ -9,3 +9,7 @@
 #
 admin = User.create(name: 'Admin', email: 'admin@admin.com', password: 'password', password_confirmation: 'password', admin: true)
 user = User.create(name: 'Regular User', email: 'user@user.com', password: 'password', password_confirmation: 'password')
+
+Article.create(title: 'article 1 by Admin', body: 'Lorem ipsum', author: admin)
+Article.create(title: 'article 2 by Admin', body: 'Lorem ipsum', author: admin)
+Article.create(title: 'article 1 by User', body: 'Lorem ipsum', author: user)

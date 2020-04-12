@@ -9,6 +9,7 @@ cd dude_policy_example1
 gem install bundler
 bundle install
 rails db:migrate
+rails db:seed
 ```
 
 

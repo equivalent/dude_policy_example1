@@ -3,6 +3,22 @@
 This is an example application for [DudePolicy](https://github.com/equivalent/dude_policy) gem
 
 
+login details
+
+**admin**
+
+u: `admin@admin.com`
+p: `password`
+
+**user**
+
+u: `user@user.com`
+p: `password`
+
+> the website is for education purpouses, please be nice :pray:
+
+### Run on localhost
+
 ```
 git clone git@github.com:equivalent/dude_policy_example1.git
 cd dude_policy_example1

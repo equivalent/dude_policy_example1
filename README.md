@@ -2,6 +2,7 @@
 
 This is an example application for [DudePolicy](https://github.com/equivalent/dude_policy) gem
 
+You can try it out at [https://dude-policy-example1.herokuapp.com](https://dude-policy-example1.herokuapp.com)
 
 login details
 

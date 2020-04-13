@@ -48,4 +48,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 ################# Dude Policy ##########
-gem 'dude_policy', path: '/home/t/git/equivalent/dude_policy'
+gem 'dude_policy'

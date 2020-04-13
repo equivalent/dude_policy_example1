@@ -18,6 +18,36 @@ p: `password`
 
 > the website is for education purpouses, please be nice :pray:
 
+### Important files
+
+Conf
+
+* [Gemfile](https://github.com/equivalent/dude_policy_example1/blob/master/Gemfile#L51)
+
+Models
+
+* [Article model](https://github.com/equivalent/dude_policy_example1/blob/master/app/models/article.rb)
+* [User model](https://github.com/equivalent/dude_policy_example1/blob/master/app/models/user.rb)
+
+Policy
+
+* [Article policy](https://github.com/equivalent/dude_policy_example1/blob/master/app/policy/article_policy.rb)
+* [User policy](https://github.com/equivalent/dude_policy_example1/blob/master/app/policy/user_policy.rb)
+
+Controllers
+
+* [Application controller](https://github.com/equivalent/dude_policy_example1/blob/master/app/controllers/application_controller.rb#L16)
+* [Articles controller](https://github.com/equivalent/dude_policy_example1/blob/master/app/controllers/articles_controller.rb#L47)
+* [Users controller](https://github.com/equivalent/dude_policy_example1/blob/master/app/controllers/users_controller.rb#L7)
+
+Views
+
+* [articles/index](https://github.com/equivalent/dude_policy_example1/blob/master/app/views/articles/index.html.erb#L24)
+
+Business logic
+
+* [helper](https://github.com/equivalent/dude_policy_example1/blob/master/app/helpers/application_helper.rb#L4)
+
 ### Run on localhost
 
 ```

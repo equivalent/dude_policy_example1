@@ -4,27 +4,32 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    authorize! current_user.dude.able_to_manage_user?(User.new)
     @users = User.all
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    authorize! current_user.dude.able_to_manage_user?(@user)
   end
 
   # GET /users/new
   def new
     @user = User.new
+    authorize! current_user.dude.able_to_manage_user?(@user)
   end
 
   # GET /users/1/edit
   def edit
+    authorize! current_user.dude.able_to_manage_user?(@user)
   end
 
   # POST /users
   # POST /users.json
   def create
     @user = User.new(user_params)
+    authorize! current_user.dude.able_to_manage_user?(@user)
 
     respond_to do |format|
       if @user.save
@@ -40,6 +45,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    authorize! current_user.dude.able_to_manage_user?(@user)
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
@@ -54,6 +60,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    authorize! current_user.dude.able_to_manage_user?(@user)
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }

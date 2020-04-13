@@ -1,5 +1,4 @@
 require 'rails_helper'
-
 RSpec.describe "Articles", type: :request do
   let(:article) { create :article }
 
@@ -16,8 +15,10 @@ RSpec.describe "Articles", type: :request do
         # devise login
         sign_in current_user 
 
+        # policies are tested with `spec/policy/article_spec.rb so we can stub
         allow(current_user.dude)
           .to receive(:able_to_update_article?)
+          .with(article)
           .and_return(authorized)
       end
 

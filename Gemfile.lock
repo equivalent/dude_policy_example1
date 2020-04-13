@@ -68,6 +68,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dude_policy (0.1.0)
+      activesupport (> 4.2)
     erubi (1.9.0)
     ffi (1.12.2)
     globalid (0.4.2)
@@ -169,6 +171,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   devise
+  dude_policy
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   puma (~> 4.1)

@@ -2,7 +2,9 @@
 
 This is an example application for [DudePolicy](https://github.com/equivalent/dude_policy) gem
 
-You can try it out at [https://dude-policy-example1.herokuapp.com](https://dude-policy-example1.herokuapp.com)
+~~You can try it out at `https://dude-policy-example1.herokuapp.com`~~
+
+> UPDATE 2022-11-17 Heroku will no longer be free (source) I'm shutting down the dyno. 
 
 login details
 
